@@ -1,0 +1,135 @@
+@import "./menupages.css";
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.food-clock.light-mode{
+  --background-color: #E3E9D1;
+  --text-color:#000000;
+}
+.food-clock.dark-mode{
+  --background-color:#4c4a4a;
+  --text-color:#FFFFFF;
+}
+/* setting page layout and major font style in the body */
+body{
+  /* font-family: 'Sarabun', sans-serif; */
+  font-family: 'Sono';
+  font-weight: normal;
+  flex-direction: column;
+  margin: 0;
+  background-color: #282626;
+  scroll-behavior: smooth;
+}
+
+#app {
+  font-family: 'Sono';
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  background-color: #000000;
+}
+
+.btn{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+  background: #5DB075;
+  box-shadow: 0px 8px 20px rgba(97, 62, 234, 0.32);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  justify-content: center;
+  height: 56px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* home pages */
+.home-btn{
+    width: 343px;
+}
+
+.home-btn:hover{
+  background: #348a4c;
+}
+
+/* auth pages global styles */
+.auth-page{  
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+.auth-page-header{
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.auth-page-header a{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #5DB075;
+}
+.auth-form .input-container{
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom:20px;
+  
+}
+
+.auth-form input::placeholder{
+  color: #A6AAB4;
+  ;
+}
+
+.auth-alternate-text{
+  color: #5DB075;
+  text-align: center;
+  font-family: Inter;
+}
+.auth-alternate-text a{
+  color:#5d6bb0;
+  transition: all .3s ease-in-out;
+}
+
+.auth-alternate-text a:hover{
+  color:#348a4c;
+}
+/* @media (min-width: 1024px) {
+  body {
+   flex-direction: row;
+  }
+
+} */
+
+/** utility classes. classes that prevent repeatition of styles. **/
+
+/* center items using flex "u can specify the flow in ur styles" */
+.flex-center{
+  display: flex;
+  place-items: center;
+}
